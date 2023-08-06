@@ -5,10 +5,12 @@
 #ifndef BANK_LOGOUT_H
 #define BANK_LOGOUT_H
 
-void invalidLogout(){
-    std::cout << "Incorrect choice" << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(2000));
-    std::cout << "Because you have selected incorrect choice you will exit the code in: " << std::endl;
+#include <iostream>
+#include <chrono>
+#include <thread>
+
+void logout(){
+    std::cout << "Exiting in" << std::endl;
     std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     for (int i = 3; i >= 0; i--)
     {
@@ -17,6 +19,7 @@ void invalidLogout(){
     }
     std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     std::cout << "Have a great day! 😊" << std::endl;
+    exit(1);
 }
 
 #endif //BANK_LOGOUT_H

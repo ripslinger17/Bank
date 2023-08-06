@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/smitpatel/Desktop/Learn/Cpp/Bank/cmake-build-debug",
-		"source" : "/Users/smitpatel/Desktop/Learn/Cpp/Bank"
+		"build" : "/Users/smitpatel/Desktop/Learn/Cpp/Bank-Original/cmake-build-debug",
+		"source" : "/Users/smitpatel/Desktop/Learn/Cpp/Bank-Original"
 	},
 	"version" : 
 	{

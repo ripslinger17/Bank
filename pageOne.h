@@ -15,20 +15,20 @@ std::string username, password, loginUsername, loginPassword;
 
 void logSign(){
     std::cout << "Welcome to the Bank "<< username << "\nWhat do you want to do?" << std::endl;
-    std::cout << "1. Signup\n2. Login" << std::endl;
-    std::cin >> choice1;
-    std::cout << "\n";
-    switch (choice1) {
-        case 1:
-            goto signup;
-            break;
-        case 2:
-            goto login;
-            break;
-        default:
-            std::cout << "Invalid Choice" << std::endl;
-            std::cin >> choice1;
-            break;
+    std::cout << "1. Signup\n2. Login\n3. Exit" << std::endl;
+    while(true) {
+        std::cin >> choice1;
+        switch (choice1) {
+            case 1:
+                goto signup;
+            case 2:
+                goto login;
+            case 3:
+                logout();
+            default:
+                std::cout << "Invalid Choice" << std::endl;
+                break;
+        }
     }
     signup:
         std::cout << "Excellent! Please create your credentials" << std::endl;
